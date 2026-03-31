@@ -1,0 +1,157 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== VARIABLES ===== */
+:root {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --primary: #38bdf8;
+    --text: #e2e8f0;
+}
+
+/* ===== BODY ===== */
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* ===== NAVBAR ===== */
+header {
+    background: var(--card);
+    padding: 15px 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+/* ===== SECTIONS ===== */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* ===== HERO ===== */
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#hero button {
+    padding: 10px 20px;
+    border: none;
+    background: var(--primary);
+    color: black;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/* ===== ABOUT ===== */
+#about img {
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+/* ===== SKILLS ===== */
+#skills div {
+    margin: 10px auto;
+    width: 60%;
+}
+
+progress {
+    width: 100%;
+}
+
+/* ===== PROJECTS ===== */
+#projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+#projects div {
+    background: var(--card);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* ===== CONTACT ===== */
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+button[type="submit"] {
+    background: var(--primary);
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--card);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (min-width: 768px) {
+    #projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #hero {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+/* LIGHT MODE */
+body.light {
+    --bg: #ffffff;
+    --text: #000000;
+    --card: #f1f1f1;
+}
+button#toggle-btn {
+    background: var(--primary);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+audio {
+    margin-top: 15px;
+}

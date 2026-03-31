@@ -23,8 +23,9 @@ body {
 
 /* ===== NAVBAR ===== */
 header {
-    background: var(--card);
+    background: transparent;
     padding: 15px 30px;
+}
 }
 
 nav {

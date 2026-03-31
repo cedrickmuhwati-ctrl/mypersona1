@@ -152,6 +152,27 @@ button#toggle-btn {
     cursor: pointer;
     font-size: 0.8rem;
 }
-audio {
-    margin-top: 15px;
+/* ===== ANIMATED DARK BACKGROUND ===== */
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text);
+    line-height: 1.6;
+
+    background: linear-gradient(-45deg, #0d0d0d, #2a2a2a, #111111, #1f1f1f);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
 }
+
+/* Smooth animation */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+    
